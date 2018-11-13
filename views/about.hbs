@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<style>
+		#menu{
+			background-color:black;
+			top:0px;
+			right: 0px;
+			width: 80px;
+			height: 55px;
+			position: absolute;
+			}
+	</style>
+</head>
+
+<body>
+	<h1>About me</h1>
+	{{> menu}}
+	<p>I am {{name}}</p>
+	{{> image}}
+</body>
+	
+	{{> footer}}
+
+<script type="text/javascript">
+	var menu = document.getElementById('menu');
+	menu.addEventListener("click",function(){
+		menu.style.height = "50px";
+		menu.innerHTML="{{content}}";
+	});
+
+</script>
+</html>
