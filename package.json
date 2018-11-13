@@ -1,12 +1,13 @@
 {
   "name": "webapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first webapp",
   "main": "webapp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
   },
-  "author": "",
+  "author": "pfroywang",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
